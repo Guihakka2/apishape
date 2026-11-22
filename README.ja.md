@@ -17,3 +17,5 @@ npx @guihakka2/apishape                                       # apishape.json �
 - **セキュリティ**：`${VAR}` は環境変数から読み、表示も保存もしない。URL はクエリ文字列なしで表示。リダイレクトは追わない。レスポンスは 10 MB まで
 
 オプション：`--update`、`--strict`、`-H`、`--name`、`--config`、`--timeout`、`--json`。詳細は [英語版 README](README.md) と [SECURITY.md](SECURITY.md) を参照。
+
+**Node.js がなくても使えます：** 各[リリース](https://github.com/Guihakka2/apishape/releases/latest)に Windows・macOS・Linux（x64 / ARM）用のプログラムがあります。ダウンロードして展開し、ターミナルで `apishape` を実行してください。GitHub Actions でビルドされ、`SHA256SUMS.txt` とビルド来歴の証明付き。まだ有料の署名はないため、初回は Windows の SmartScreen（「詳細情報」→「実行」）、macOS では `xattr -d com.apple.quarantine apishape` を一度実行してください。

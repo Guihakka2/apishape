@@ -77,6 +77,12 @@ The snapshot that gets committed (`.apishape/users.json`):
 | Field that was always `null` now has a value | not breaking (the old sample just didn't show its type) |
 | Map keys that are ids (`{"123": …}`, UUIDs) | grouped as `*`, not new fields |
 
+## Download (no Node.js needed)
+
+Don't have Node.js? Each [release](https://github.com/Guihakka2/apishape/releases/latest) has a standalone program for Windows (x64, ARM), macOS (Apple silicon, Intel) and Linux (x64, ARM). Download the file for your system, unzip it and run `apishape` from a terminal, with the same options as above.
+
+The programs are built by GitHub Actions from this repository's code, with a `SHA256SUMS.txt` and a [build provenance attestation](https://docs.github.com/actions/security-for-github-actions/using-artifact-attestations) (`gh attestation verify <file> -R Guihakka2/apishape`). They are not code-signed with a paid certificate yet, so the first run shows a warning: on Windows, SmartScreen → "More info" → "Run anyway"; on macOS, run `xattr -d com.apple.quarantine apishape` once.
+
 ## Options
 
 | Option | |
