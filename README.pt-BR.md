@@ -17,3 +17,5 @@ npx @guihakka2/apishape                                       # todos os endpoin
 - **Segurança**: `${VAR}` vem do ambiente e nunca é mostrado nem salvo; URLs aparecem sem a query string; redirects não são seguidos; respostas limitadas a 10 MB.
 
 Opções: `--update`, `--strict`, `-H`, `--name`, `--config`, `--timeout`, `--json`. Detalhes no [README em inglês](README.md) e em [SECURITY.md](SECURITY.md).
+
+**Sem Node.js?** Cada [release](https://github.com/Guihakka2/apishape/releases/latest) tem um programa pronto para Windows, macOS e Linux (x64 e ARM): baixe, descompacte e rode `apishape` no terminal. Gerado pelo GitHub Actions, com `SHA256SUMS.txt` e atestado de procedência. Ainda sem assinatura paga: na primeira vez, o Windows mostra o SmartScreen ("Mais informações" → "Executar assim mesmo") e no macOS rode `xattr -d com.apple.quarantine apishape` uma vez.

@@ -17,3 +17,7 @@ You will get a reply within 7 days.
 - Snapshot names are restricted to `[A-Za-z0-9._-]`, and local files must be inside the current folder (no path traversal).
 - Terminal control characters are stripped from everything printed.
 - npm releases are built by GitHub Actions with provenance; never by hand.
+
+## Standalone executables
+
+Release executables are built only by GitHub Actions (`binaries.yml`) from the tagged source with the official Node.js single executable application feature, smoke-tested, and published with a SHA256SUMS.txt and a build provenance attestation (`gh attestation verify <file> -R Guihakka2/apishape`). They are not code-signed with a paid certificate yet.
